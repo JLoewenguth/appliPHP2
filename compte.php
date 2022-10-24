@@ -1,7 +1,6 @@
 <?php
+class Compte{
     private int $size;
-
-    session_start();
 
 
     // constructeur
@@ -32,5 +31,5 @@
 
     /*$_POST['size'] = count($_SESSION['products']);
     echo $_POST['size']." produits dans la liste.";*/
-
+}
 ?>
