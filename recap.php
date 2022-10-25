@@ -58,9 +58,10 @@
                 "</tr>",
             "</tbody>",
             "</table>";
-            /*echo "<a href='compte.php?'size''>";*/
-            /*echo $_POST['size'];*/
-            echo $size->afficherCompte();
+            /*echo "<a href='compte.php?'size''>";
+            echo $_POST['size'];
+            echo $size->afficherCompte();*/
+            
         }
     ?>
     <!-- lien vers la page commande -->

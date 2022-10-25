@@ -38,6 +38,18 @@
             </p>
         </form></div>
     </body></div>
+
+    <!--<div class="compteur">Nb de produits : <?php  
+            
+            /*if (isset($_SESSION['products'])){
+                echo sizeof($_SESSION['products']); 
+            }
+            else{
+                echo "0";
+            }*/
+            ?>
+        </div>-->
+
 <!-- lien vers le récapitulatif produits -->
 </br><a href="recap.php">Récapitulatif des produits</a>
 </html>
@@ -45,6 +57,7 @@
 <?php
 
 //message de traitement.php
+
 if(isset($_GET['Message'])){
     echo $_GET['Message'];
 }

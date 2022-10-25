@@ -16,11 +16,16 @@
                         "qtt" => $qtt,
                         "total" => $price*$qtt
                     ];
-                    $Message = urlencode("</br></br>Liste mise à jour.");       //message en cas de nouvelles données
+                    $list=sizeof($_SESSION['products']);
+                    $Message = urlencode("</br></br>Liste mise à jour. $list");       //message en cas de nouvelles données
                     $_SESSION['products'][] = $product;                         //enregistrement produit
+                    //$ListSize = urlencode(sizeof($_SESSION['products']));
                 }   else{
-                    $Message = urlencode("</br></br>Données non valides.");     //message en cas de données invalides
+                    $list=sizeof($_SESSION['products']);
+                    $Message = urlencode("</br></br>Données non valides. $list");     //message en cas de données invalides
+                    //$ListSize = urlencode(sizeof($_SESSION['products']));
                 }
+                
             }
         header("Location: recap.php");
         die;
