@@ -6,6 +6,7 @@
 <DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Récapitulatif produits</title>
 </head>
+
 
 <body>
     <h2>Récapitulatif des produits :</h2>
@@ -51,6 +53,7 @@
                 $totalGeneral += $product['total'];
             }
 
+                //ligne des totaux
             echo "<tr>",
                     "<td colspan=4>Total général : </td>",
                     "<td><strong>".number_format($totalGeneral,2,",", "&nbsp;")."&nbsp;€</strong></td>",
@@ -64,6 +67,7 @@
             
         }
     ?>
+    
     <!-- lien vers la page commande -->
     <p><a href="index.php">Retour à la page des commandes</a></p>
     

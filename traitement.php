@@ -16,7 +16,7 @@
                         "qtt" => $qtt,
                         "total" => $price*$qtt
                     ];
-                    $list=sizeof($_SESSION['products']);
+                    //$list=sizeof($_SESSION['products']);
                     $Message = urlencode("</br></br>Liste mise à jour. $list");       //message en cas de nouvelles données
                     $_SESSION['products'][] = $product;                         //enregistrement produit
                     //$ListSize = urlencode(sizeof($_SESSION['products']));

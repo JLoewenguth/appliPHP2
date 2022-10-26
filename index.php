@@ -11,8 +11,8 @@
         <title>Ajout produit</title>
     </head>
 
-    <body>
 
+    <body>
     <div id="encadre"><h2>Ajouter un produit :</h2>
         <form action="traitement.php?action=addProduct" method="post">
             <p>
@@ -52,12 +52,12 @@
 
 <!-- lien vers le récapitulatif produits -->
 </br><a href="recap.php">Récapitulatif des produits</a>
+
 </html>
 
 <?php
 
 //message de traitement.php
-
 if(isset($_GET['Message'])){
     echo $_GET['Message'];
 }
